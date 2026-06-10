@@ -7,6 +7,8 @@ describe('Login Demoblaze', () => {
 
     it('Login Successfully',{ tags: ['smoke' , 'sanity', 'regression'] }, () => {
         LoginPage.login('paijo123', 'paijo1234');
+        cy.wait(1000);
         LoginPage.verifyLoginSuccess('paijo123');
+        cy.wait(1000);
     });
 })

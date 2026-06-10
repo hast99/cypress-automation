@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "smoke": "cypress run --env grepTags=smoke",
+    "sanity": "cypress run --env grepTags=sanity",
+    "regression": "cypress run --env grepTags=regression",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +16,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@bahmutov/cy-grep": "^3.0.4",
     "cypress": "^15.16.0"
   }
 }

@@ -15,9 +15,7 @@ class LoginPage {
     enterUsername(username){
         this.elements.usernameInput().should('be.visible').clear().type(username);
         // should('be.visible') digunakan untuk memastikan bahwa elemen input username sudah terlihat sebelum kita mencoba untuk mengisinya. 
-        // Ini membantu mencegah error yang mungkin terjadi jika kita mencoba untuk berinteraksi dengan elemen yang belum muncul di halaman.
-        // clear() digunakan untuk membersihkan input field sebelum kita mengetikkan username baru. Ini memastikan bahwa tidak ada teks yang tersisa dari percobaan sebelumnya yang dapat mempengaruhi hasil tes.
-        // type(username) digunakan untuk memasukkan nilai username yang diberikan ke dalam input field setelah memastikan bahwa elemen tersebut sudah terlihat dan membersihkannya terlebih dahulu.
+        // clear() digunakan untuk membersihkan input field sebelum kita mengetikkan username baru.
     }
 
     enterPassword(password){
